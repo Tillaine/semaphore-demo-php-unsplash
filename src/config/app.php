@@ -178,8 +178,8 @@ return [
     ],
 
     'unsplash' => [
-        'applicationId' => env('UNSPLASH_ACCESS_KEY'),
-        'secret' => env('UNSPLASH_SECRET_KEY'),
+        'applicationId' => 'mu796Q6lXay2XK7EQoG4RVUJU7Cn5D6pB7zetC5Zk3g',
+        'secret' => '9yW2yK0jWyci4e1feJZoTdRGLN1eHMvuRdF3prJt3a4',
         'source' => 'Image Gallery Demo'
     ],
 

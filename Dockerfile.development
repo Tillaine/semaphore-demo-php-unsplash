@@ -1,0 +1,13 @@
+# Dockerfile.development
+FROM php:7-apache
+MAINTAINER brittany@breakthroughbroker.com
+
+# Setup Apache2 config
+COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
+RUN a2enmod rewrite
+
+# use your users $UID and $GID below
+RUN groupadd apache-www-volume -g 70
+RUN useradd apache-www-volume -u 70 -g 70
+
+CMD ["apache2-foreground"]
